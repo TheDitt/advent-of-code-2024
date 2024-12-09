@@ -1,4 +1,3 @@
-from itertools import product
 import evaluate_expression
 import generate_operator_combinations
 
