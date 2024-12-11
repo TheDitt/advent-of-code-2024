@@ -11,7 +11,8 @@ class TestDiskFragmenter(unittest.TestCase):
 
     def test_all_files_no_free_space(self):
         disk_map = "111111"
-        expected_checksum = 0  # Since there are no free spaces, the checksum should be 0
+        expected_checksum = 0  
+                # Since there are no free spaces, the checksum should be 0
         self.assertEqual(DF.DiskFragmenter(disk_map).compact_disk_and_calculate_checksum(), 
                          expected_checksum)
 
@@ -41,7 +42,8 @@ class TestDiskFragmenter(unittest.TestCase):
 
     def test_large_input(self):
         disk_map = "12345678901234567890"
-        expected_checksum = 0  # Replace with the correct expected checksum for this input
+        expected_checksum = 0  
+                # Replace with the correct expected checksum for this input
         self.assertEqual(DF.DiskFragmenter(disk_map).compact_disk_and_calculate_checksum(), 
                          expected_checksum)
 
