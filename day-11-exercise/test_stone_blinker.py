@@ -26,7 +26,6 @@ class TestStoneBlinker(unittest.TestCase):
         initial_stones = [125, 17]
         blinker = SB.StoneBlinker(initial_stones)
         blinker.simulate_blinks(1)
-        # Add expected result after 1 blink
         expected_stones_after_1_blink = [125 * 2024, 1, 7]
         self.assertEqual(blinker.stones, expected_stones_after_1_blink)
 
